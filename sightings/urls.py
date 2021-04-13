@@ -6,6 +6,6 @@ urlpatterns = [
 	    path('',views.homepage_view),
 	    path('sightings/',views.list_sights),
 	    path('sightings/<Unique_Squirrel_Id>/',views.update_sights),
-	    path('sightings/add/',views.add_sights),
-	    path('sightings/stats/',views.stats_view),
+	    path('add/',views.add_sights),
+	    path('stats/',views.stats_view),
 	    ]

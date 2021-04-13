@@ -84,7 +84,7 @@ def stats_view(request):
     Climbing_True_pct = Climbing_True / (Climbing_True+Climbing_False)
     Climbing_True_pct = "{:.2%}".format(Climbing_True_pct)
     Climbing_False_pct = Climbing_False / (Climbing_True+Climbing_False)
-    Climbing_False_pct = "{:.2%}".format(Climbing__False_pct)
+    Climbing_False_pct = "{:.2%}".format(Climbing_False_pct)
 
     context = {
             'Total':sights.count(),

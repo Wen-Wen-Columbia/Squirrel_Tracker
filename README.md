@@ -4,7 +4,13 @@
 This is Squirrel Tracker project for IEOR4501 Tools for Analytics course (2021 Spring).
 
 # Summary
-This app can track squirrels in NYC Central Park with the attributions like Latitud, Longitude, Unique Squirrel ID, Shift, Date, Age, Primary Fur Color. The data was imported from the [2018 Central Park Squirrel Census Data](https://data.cityofnewyork.us/api/views/vfnx-vebw/rows.csv).
+This app can track squirrels in NYC Central Park with the attributions like Latitud, Longitude, Unique Squirrel ID, Shift, Date, Age, Primary Fur Color. Moreover, it shows a map with sightings.The data was imported from the [2018 Central Park Squirrel Census Data](https://data.cityofnewyork.us/api/views/vfnx-vebw/rows.csv).
+
+# Requirements
+Use the package manager pip to install required packages.
+```python
+$ pip install -r requirements.txt
+```
 
 # Functions
 This app supports:
@@ -22,7 +28,7 @@ python manage.py import_squirrel_data /path/to/file.csv
 python manage.py export_squirrel_data /path/to/file.csv
 ```
 
-# App Link
+# Application Link
 [Click](https://adept-crossing-309006.et.r.appspot.com/) to view this app.
 
 # Contributors

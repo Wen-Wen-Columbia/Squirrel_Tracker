@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Squirrel Tracker: Statistics Overview </title> 
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        </head>
+        <body>
+<style>
+      body {
+        padding-left: 10px; padding-right: 10px;
+      }
+</style>
+
+		<p>
+		<br>
+		<strong><h2>  <img src="https://image.flaticon.com/icons/svg/2077/2077173.svg" style="width:60px" class="rounded" alt="..." >       Squirrel Tracker: Statistics Overview       <img src="https://image.flaticon.com/icons/svg/2077/2077173.svg" style="width:60px" class="rounded" alt="..." ></h2></strong>
+		<hr>
+		<ul>
+			<br>
+			<li>There are <strong>{{context.Total}}</strong>  <img src="https://image.flaticon.com/icons/svg/570/570656.svg" style="width:40px" class="rounded" alt="..." ><img src="https://image.flaticon.com/icons/svg/570/570656.svg" style="width:40px" class="rounded" alt="..." ><img src="https://image.flaticon.com/icons/svg/570/570656.svg" style="width:40px" class="rounded" alt="..." >  sightings in our records.</li>
+		<br>
+		<li>The following statistics do not include unknown and missing tracking records.</li>
+		</ul>
+		</p>
+		<br>
+		<br>
+                <div>
+                        <table class='table' id="shift_table" style="width: 700px">
+				<div class="alert alert-danger text-center" style="width: 700px" role="alert">
+					<h5><strong> Counts of squirrel sightings in each shift </strong></h5>
+                                </div>
+                                <thead class="thead-dark">
+                                         <tr>
+                                                 <th scope='col'></th>
+                                                 <th scope='col'>AM</th>
+                                                 <th scope='col'>PM</th>
+                                         </tr>
+                                 </thead>
+                                 <tbody>
+                                         <tr>
+                                                 <th>Shift</th>
+                                                 <td>{{context.Shift.AM}}</td>
+                                                 <td>{{context.Shift.PM}}</td>
+                                         </tr>
+                                         <tr>
+                                                 <th>percentage %</th>
+                                                 <td>{{context.Shift_pct.AM}}</td>
+                                                 <td>{{context.Shift_pct.PM}}</td>
+                                         </tr>
+                                 </tbody>
+                         </table>
+                </div>
+		<br>
+		<br>
+                <div>
+                         <table class="table" id="age_table" style="width: 700px">
+				 <div class="alert alert-success text-center" style="width: 700px" role="alert">
+                                        <h5><strong> Counts of juvenile and adult squirrels </strong></h5>
+                                </div>
+				 <thead class="thead-dark">
+                                         <tr>
+                                                 <th scope='col'></th>
+                                                 <th scope='col'>Juvenile</th>
+                                                 <th scope='col'>Adult</th>
+                                         </tr>
+                                         </thead>
+                                 <tbody>
+                                         <tr>
+                                                 <th>Age</th>
+                                                 <td>{{context.Age.Juvenile}}</td>
+                                                 <td>{{context.Age.Adult}}</td>
+                                         </tr>
+                                         <tr>
+                                                 <th>percentage %</th>
+                                                 <td>{{context.Age_pct.Juvenile}}</td>
+                                                 <td>{{context.Age_pct.Adult}}</td>
+                                         </tr>
+                                 </tbody>
+                         </table>
+                </div>
+		<br>
+		<br>
+                <div>
+			<table class='table' id="color_table"  style="width: 700px">
+				<div class="alert alert-info text-center" style="width: 700px" role="alert">
+                                        <h5><strong> Counts of squirrels eating </strong></h5>
+                                </div>
+                                <thead class="thead-dark">
+                                         <tr>
+                                                 <th scope='col'></th>
+                                                 <th scope='col'>Eating</th>
+                                                 <th scope='col'>Not Eating</th>
+                                         </tr>
+                                 </thead>
+                                 <tbody>
+                                         <tr>
+                                                 <th>Behaviour</th>
+                                                 <td>{{context.Eating.Eating_True}}</td>
+                                                 <td>{{context.Eating.Eating_False}}</td>
+                                         </tr>
+                                         <tr>
+                                                 <th>percentage %</th>
+                                                 <td>{{context.Eating_pct.Eating_True}}</td>
+                                                 <td>{{context.Eating_pct.Eating_False}}</td>
+                                         </tr>
+                                 </tbody>
+                         </table>
+                </div>
+		<br>
+		<br>
+                <div>
+                         <table class='table' id="location_table" style="width: 700px">
+				 <div class="alert alert-warning text-center" style="width: 700px" role="alert">
+                                        <h5><strong> Counts of squirrels running </strong></h5>
+                                </div>
+				 <thead class="thead-dark">
+                                         <tr>
+                                                 <th scope='col'></th>
+                                                 <th scope='col'>Running</th>
+                                                 <th scope='col'>Not Running</th>
+                                         </tr>
+                                 </thead>
+                                 <tbody>
+                                         <tr>
+                                                 <th>Behaviour</th>
+                                                 <td>{{context.Running.Running_True}}</td>
+                                                 <td>{{context.Running.Running_False}}</td>
+                                         </tr>
+                                         <tr>
+                                                 <th>percentage %</th>
+                                                 <td>{{context.Running_pct.Running_True}}</td>
+                                                 <td>{{context.Running_pct.Running_False}}</td>
+                                         </tr>
+                                 </tbody>
+                         </table>
+                </div>
+		<br>
+		<br>
+                <div>
+			<table class='table' id="runfrom_table" style="width: 700px">
+				<div class="alert alert-primary text-center" style="width: 700px" role="alert">
+					<h5><strong> Counts of squirrels climbing </strong></h5>
+				</div>
+				<thead class="thead-dark">
+					 <tr>
+						 <th scope='col'></th>
+						 <th scope='col'>Climbing</th>
+						 <th scope='col'>Not Climbing</th>
+					 </tr>
+				 </thead>
+				 <tbody>
+					 <tr>
+						 <th>Behaviour</th>
+						 <td>{{context.Climbing.Climbing_True}}</td>
+						 <td>{{context.Climbing.Climbing_False}}</td>
+					 </tr>
+					 <tr>
+						 <th>percentage %</th>
+						 <td>{{context.Climbing_pct.Climbing_True}}</td>
+                                                 <td>{{context.Climbing_pct.Climbing_False}}</td>
+					 </tr>
+				 </tbody>
+			 </table>
+                </div>
+		<br>
+		<br>
+        </body>
+</html>
+
+

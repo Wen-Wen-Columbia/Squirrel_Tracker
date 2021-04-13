@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang='en'>
+        <head>
+                <title>Squirrel Tracker: List of Squirrel Sightings</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        </head>
+        <body>
+<style>
+      body {
+        padding-left: 10px; padding-right: 10px;
+      }
+</style>
+		<p>
+		<br>
+		<strong><h2> <img src="https://image.flaticon.com/icons/svg/2291/2291277.svg" style="width:60px" class="rounded" alt="..." >    Welcome to the World of Squirrels: Squirrel Tracker!    <img src="https://image.flaticon.com/icons/svg/2291/2291277.svg" style="width:60px" class="roun
+ded" alt="..." ></strong></h2>
+		<hr>
+		</p>
+		<br>
+		<div>
+                <table class="table">
+			<div class="alert alert-dark text-center" role="alert">
+				<h5><strong> Overview: Squirrel Sighting Records </strong></h5>
+			</div>
+			<thead class = "thead-dark">
+                                <tr>
+                                        <th scope = "col">Unique Squirrel Id</th>
+                                        <th scope = "col">Date</th>
+                                        <th scope = "col">Update Link</th>
+                                </tr>
+                        </thead>
+
+                        <tbody>
+                        {% for sight in sights %}
+                                <tr>
+                                        <td>{{ sight.Unique_Squirrel_Id }}</td>
+                                        <td>{{ sight.Date }}</td>
+                                        <td><a href="{{sight.Unique_Squirrel_Id}}/">Update Link</a></td>
+                                </tr>
+                        {% endfor %}
+                        </tbody>
+                </table>
+		</div>
+		<br>
+		<br>
+        </body>
+</html>

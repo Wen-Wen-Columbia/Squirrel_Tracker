@@ -21,7 +21,7 @@ python manage.py export_squirrel_data /path/to/file.csv
 ```
 
 # App
-[Click](https://adept-crossing-309006.et.r.appspot.com/) to view our app. Or here is a link to the server running our application: https://adept-crossing-309006.et.r.appspot.com/
+[Click](https://adept-crossing-309006.et.r.appspot.com/) to view our app.
 
 # Contribution
 UNIs: [ww2573, qz2410]

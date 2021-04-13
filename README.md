@@ -29,9 +29,9 @@ python manage.py export_squirrel_data /path/to/file.csv
 ```
 
 # Application Link
-[Click](https://adept-crossing-309006.et.r.appspot.com/) to view this app.
+[Click](https://adept-crossing-309006.et.r.appspot.com/) to view this app. Or the link for this app is https://adept-crossing-309006.et.r.appspot.com/.
 
 # Contributors
-Gourp 52
+Project Gourp 52
 
 UNIs: [ww2573, qz2410]

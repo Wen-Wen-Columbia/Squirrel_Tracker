@@ -7,11 +7,11 @@ This app can track squirrels' locations and behaviours in NYC Central Park. The 
 # Function
 This app supports:
 - [x] A list that contains all squirrel sightings
-2. A map that plots the first 100 squirrel sightings
-3. Add a new squirrel sighting
-4. Update current sightings
-5. Show some common statistics about the squirrel sightings
-6. Import and export the data of squirrel sightings
+- [x] A map that plots the first 100 squirrel sightings
+- [x] Add a new squirrel sighting
+- [x] Update current sightings
+- [x] Show some common statistics about the squirrel sightings
+- [x] Import and export the data of squirrel sightings
 ```python
 # import
 python manage.py import_squirrel_data /path/to/file.csv

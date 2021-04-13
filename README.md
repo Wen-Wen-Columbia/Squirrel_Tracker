@@ -3,7 +3,6 @@ This is Squirrel Tracker project (Group 52) for IEOR4501 Tools for Analytics cou
 
 # Summary
 This app can track squirrels' locations and behaviours in NYC Central Park. The data was imported from the 2018 Central Park Squirrel Census Data.
-You can access this app by https://adept-crossing-309006.et.r.appspot.com/
 
 # Function
 This app supports:

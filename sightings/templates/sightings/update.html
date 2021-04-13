@@ -9,17 +9,19 @@
 <style>body{padding-left:10px; padding-right:10px;}</style>
                 <p>
                 <br>
-		<strong><h2><img src="https://image.flaticon.com/icons/svg/604/604239.svg" style="width:60px" class="rounded" alt="..." >   Update the Squirrel Sighting    <img src="https://image.flaticon.com/icons/svg/1230/1230876.svg" style="width:60px" class="rounded" alt="..." ></strong>
+                <h2>
+                <strong>
+                Update
+                </strong>
                 </h2>
-                <p>Please use the following form to update the squirrel sighting</p>
                 <hr>
                 <br>
                 <form method='post'>
                         {% csrf_token %}
                         {{form.as_p}}
                         <br>
-                        <p>Thanks for info! <img src="https://image.flaticon.com/icons/svg/1140/1140163.svg" style="width:30px" class="rounded" alt="..." ></p>
-                        <input type="submit" name="save">
+                        <hr>
+                        <input type="submit" name="save">  &nbsp;&nbsp; <img src="../../image/update_logo.png" style="width:30px" class="rounded" alt="..." >
                         <br>
                 </form>
                 <br>

@@ -1,7 +1,7 @@
 ![image](https://github.com/Wen-Wen-Columbia/Squirrel_Tracker/blob/master/sightings/image/Welcome.jpg)
 
 # Squirrel Tracker
-This is Squirrel Tracker project for IEOR4501 Tools for Analytics course (2021 Spring).
+This is Squirrel Tracker project for Joffrey Hosencratz and for the IEOR4501 Tools for Analytics course (2021 Spring).
 
 # Summary
 This app can track squirrels in NYC Central Park with the attributions like Latitud, Longitude, Unique Squirrel ID, Shift, Date, Age, Primary Fur Color. Moreover, it shows a map with sightings.The data was imported from the [2018 Central Park Squirrel Census Data](https://data.cityofnewyork.us/api/views/vfnx-vebw/rows.csv).

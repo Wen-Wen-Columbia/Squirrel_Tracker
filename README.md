@@ -12,6 +12,13 @@ This app supports:
 4. Update current sightings
 5. Show some common statistics about the squirrel sightings
 6. Import and export the data of squirrel sightings
+```python
+# import
+python manage.py import_squirrel_data /path/to/file.csv
+
+# export
+python manage.py export_squirrel_data /path/to/file.csv
+```
 
 # Contribution
 UNIs: [ww2573, qz2410]

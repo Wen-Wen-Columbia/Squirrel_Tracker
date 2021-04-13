@@ -6,7 +6,7 @@ This app can track squirrels' locations and behaviours in NYC Central Park. The 
 
 # Function
 This app supports:
-1. A list that contains all squirrel sightings
+- [x] A list that contains all squirrel sightings
 2. A map that plots the first 100 squirrel sightings
 3. Add a new squirrel sighting
 4. Update current sightings

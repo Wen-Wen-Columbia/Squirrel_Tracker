@@ -53,38 +53,28 @@ def stats_view(request):
     # shift
     AM_n = sights.filter(Shift='AM').count()
     PM_n = sights.filter(Shift='PM').count()
-    AM_pct = AM_n / sights.count()
-    AM_pct = "{:.2%}".format(AM_pct)
-    PM_pct = PM_n / sights.count()
-    PM_pct = "{:.2%}".format(PM_pct)
+    AM_pct = "{:.2%}".format(AM_n / sights.count())
+    PM_pct = "{:.2%}".format(PM_n / sights.count())
     # age
     Juvenile_n = sights.filter(Age='Juvenile').count()
     Adult_n = sights.filter(Age='Adult').count()
-    Juvenile_pct = Juvenile_n / sights.count()
-    Juvenile_pct = "{:.2%}".format(Juvenile_pct)
-    Adult_pct = Adult_n / sights.count()
-    Adult_pct = "{:.2%}".format(Adult_pct)
+    Juvenile_pct = "{:.2%}".format(Juvenile_n / sights.count())
+    Adult_pct = "{:.2%}".format(Adult_n / sights.count())
     # Eating
     Eating_True = sights.filter(Eating='True').count()
     Eating_False = sights.filter(Eating='False').count()
-    Eating_True_pct = Eating_True / sights.count()
-    Eating_True_pct = "{:.2%}".format(Eating_True_pct)
-    Eating_False_pct = Eating_False / sights.count()
-    Eating_False_pct = "{:.2%}".format(Eating_False_pct)
+    Eating_True_pct = "{:.2%}".format(Eating_True / sights.count())
+    Eating_False_pct = "{:.2%}".format(Eating_False / sights.count())
     # Running
     Running_True = sights.filter(Running='True').count()
     Running_False = sights.filter(Running='False').count()
-    Running_True_pct = Running_True / sights.count()
-    Running_True_pct = "{:.2%}".format(Running_True_pct)
-    Running_False_pct = Running_False / sights.count()
-    Running_False_pct = "{:.2%}".format(Running_False_pct)
+    Running_True_pct = "{:.2%}".format(Running_True / sights.count())
+    Running_False_pct = "{:.2%}".format(Running_False / sights.count())
     # Climbing
     Climbing_True = sights.filter(Climbing='True').count()
     Climbing_False = sights.filter(Climbing='False').count()
-    Climbing_True_pct = Climbing_True / sights.count()
-    Climbing_True_pct = "{:.2%}".format(Climbing_True_pct)
-    Climbing_False_pct = Climbing_False / sights.count()
-    Climbing_False_pct = "{:.2%}".format(Climbing_False_pct)
+    Climbing_True_pct = "{:.2%}".format(Climbing_True / sights.count())
+    Climbing_False_pct = "{:.2%}".format(Climbing_False / sights.count())
 
     context = {
             'Shift': {'AM': AM_n,'PM': PM_n},
